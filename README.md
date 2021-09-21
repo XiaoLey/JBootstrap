@@ -6,7 +6,7 @@
 |  1  |      5.1.0       | 2021-08-31 |
 |  2  |      5.1.1       | 2021-09-21 |
 
-## 修改
+## 内容
 1. `$enable-important-utilities`设置为true，**即不添加!important修饰**
 2. 创建了 `create-spacers($step, $steps)`函数用于创建 `$spacers`变量，覆盖原有的 `$spacers`
 
@@ -28,15 +28,20 @@
 4. 修改$font-sizes变量，修改为如下：
    ```SCSS
    $font-sizes: (
-         1: $h1-font-size,
-         2: $h2-font-size,
-         3: $h3-font-size,
-         4: $h4-font-size,
-         5: $h5-font-size,
-         6: $h6-font-size,
-         7: $font-size-base * .9,
-         8: $font-size-base * .85,
-         9: $font-size-base * .8,
-        10: $font-size-base * .75
+        1: $h1-font-size,
+        2: $h2-font-size,
+        3: $h3-font-size,
+        4: $h4-font-size,
+        5: $h5-font-size,
+        6: $h6-font-size,
+        7: $font-size-base * .9,
+        8: $font-size-base * .85,
+        9: $font-size-base * .8,
+       10: $font-size-base * .75
    );
    ```
+5. 添加JBootstrap独特的主类：`jb-container`，某标签在使用JBootstrap提供的样式时需要被包含在`jb-container`类标签中。
+6. 控制`input`样式的类（其父类需添加`jb-container`类名）
+   | 类名 | 描述 |
+   | :-: | :--- |
+   | form-number-btn-none | 去掉input类型为数字时输入框右边的数字调节按钮 |

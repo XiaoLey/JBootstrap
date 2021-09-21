@@ -1,3 +1,8 @@
+// JBootstrap 部分 --begin
+$jb-container: '.jb-container'; // JBootstrap私有类主类
+$form-number-btn-none: '.form-number-btn-none'; // 去掉input类型为数字时输入框右边的数字调节按钮
+// JBootstrap 部分 --end
+
 // Options 部分 --begin
 $enable-important-utilities: false; // 去掉!important修饰符
 // Options 部分 --end

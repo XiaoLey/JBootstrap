@@ -1,11 +1,13 @@
 // 去掉input类型为数字时输入框右边的数字调节按钮
 #{$jb-container} {
   input {
-    -moz-appearance: textfield;
+    &#{$form-number-btn-none} {
+      -moz-appearance: textfield;
 
-    &::-webkit-outer-spin-button#{$form-number-btn-none},
-    &::-webkit-inner-spin-button#{$form-number-btn-none} {
-      -webkit-appearance: none;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
     }
   }
 }

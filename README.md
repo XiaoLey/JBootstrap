@@ -18,3 +18,18 @@
    
    调用：`$sizing: create-sizing(5);`  
    注意：该变量将会影响**宽**和**高**的比例样式选项
+4. 修改$font-sizes变量，修改为如下：
+   ```SCSS
+   $font-sizes: (
+        1: $h1-font-size,
+        2: $h2-font-size,
+        3: $h3-font-size,
+        4: $h4-font-size,
+        5: $h5-font-size,
+        6: $h6-font-size,
+        7: $font-size-base * .9,
+        8: $font-size-base * .85,
+        9: $font-size-base * .8,
+        10: $font-size-base * .75
+   );
+   ```
